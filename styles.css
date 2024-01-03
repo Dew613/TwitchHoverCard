@@ -1,0 +1,24 @@
+/* *{
+    border: 1px solid red;
+} */
+
+:root {
+    --border: rgb(13, 169, 13);
+}
+
+body{
+    background-color: rgb(13,13,13);
+    display: grid;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    place-items: center;
+}
+
+.card {
+    aspect-ratio: 1 / 1.6;
+    border: 0.5vmin solid var(--border);
+    cursor: pointer;
+    position: relative;
+    width: 56vmin;
+  }
