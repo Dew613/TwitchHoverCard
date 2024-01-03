@@ -4,6 +4,11 @@
 
 :root {
     --border: rgb(13, 169, 13);
+
+
+    --g1: #33c583;
+    --g2: #f98ef6;
+    --g3: #fff600;
 }
 
 body{
@@ -22,3 +27,27 @@ body{
     position: relative;
     width: 56vmin;
   }
+
+.card::before{
+    background: linear-gradient(
+        135deg,
+        transparent 0% 33%,
+        var(--g1) 66%,
+        var(--g2) 87.5%,
+        var(--g3) 100%
+    );
+    background-position: 0% 0%;
+    background-size: 300%;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    transition: background-position 350ms ease;
+}
+
+.card:hover::before{
+    background-position: 100% 100%;
+}
