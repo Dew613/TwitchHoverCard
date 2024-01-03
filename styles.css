@@ -59,8 +59,9 @@ body{
   }
 
 .card-content{
-    height: 100%;
-    width: 100%;
+    height: calc(100% - 10vmin);
+    width: calc(100% - 10vmin);
+    padding: 5vmin;
     position: relative;
     /* adds a dot to the background, use the background-size attribute to fill the card with duplicates*/
     background-image: radial-gradient(
@@ -73,3 +74,20 @@ body{
     z-index: 2;
 }
 
+
+
+.card-title, .card-subtitle{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+    margin: 0px;
+}
+
+.card-title {
+    font-size: 6vmin;
+}
+  
+.card-subtitle {
+    font-size: 3vmin;
+    margin-top: 2vmin;
+}
