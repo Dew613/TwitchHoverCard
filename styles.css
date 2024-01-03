@@ -4,7 +4,7 @@
 
 :root {
     --border: rgb(13, 169, 13);
-
+    --dots: rgb(20, 65, 20);
 
     --g1: #33c583;
     --g2: #f98ef6;
@@ -52,4 +52,16 @@ body{
 .card:hover::before{
     background-position: 100% 100%;
     transform: scale(1.13, 1.07);
+}
+
+.card-content{
+    height: 100%;
+    width: 100%;
+    /* adds a dot to the background, use the background-size attribute to fill the card with duplicates*/
+    background: radial-gradient(
+        var(--dots) 7%,
+        transparent 7%
+    );
+    background-position: 0%, 0%;
+    background-size: 5vmin 5vmin;
 }
