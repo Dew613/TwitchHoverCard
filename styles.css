@@ -51,7 +51,7 @@ body{
 
 .card:hover::before{
     background-position: 100% 100%;
-    transform: scale(1.08, 1.03);
+    transform: scale(1.13, 1.07);
 }
 
 .card:hover > .card-content {
