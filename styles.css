@@ -37,7 +37,7 @@ body{
         var(--g3) 100%
     );
     background-position: 0% 0%;
-    background-size: 300%;
+    background-size: 300% 300%;
     content: "";
     position: absolute;
     top: 0px;
@@ -45,9 +45,11 @@ body{
     height: 100%;
     width: 100%;
     z-index: 1;
-    transition: background-position 350ms ease;
+    transition: background-position 350ms ease, transform 350ms ease;
+
 }
 
 .card:hover::before{
     background-position: 100% 100%;
+    transform: scale(1.13, 1.07);
 }
