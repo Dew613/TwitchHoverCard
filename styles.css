@@ -4,7 +4,7 @@
 
 :root {
     --border: rgb(13, 169, 13);
-    --dots: rgb(20, 65, 20);
+    --dots: rgba(20, 65, 20, 0.2);
 
     --g1: #33c583;
     --g2: #f98ef6;
@@ -21,7 +21,7 @@ body{
 }
 
 .card {
-    aspect-ratio: 1 / 1.6;
+    aspect-ratio: 1/ 1.6;
     border: 0.5vmin solid var(--border);
     cursor: pointer;
     position: relative;
@@ -51,17 +51,25 @@ body{
 
 .card:hover::before{
     background-position: 100% 100%;
-    transform: scale(1.13, 1.07);
+    transform: scale(1.08, 1.03);
 }
+
+.card:hover > .card-content {
+    background-position: -10% 0%;
+  }
 
 .card-content{
     height: 100%;
     width: 100%;
+    position: relative;
     /* adds a dot to the background, use the background-size attribute to fill the card with duplicates*/
-    background: radial-gradient(
+    background-image: radial-gradient(
         var(--dots) 7%,
         transparent 7%
     );
-    background-position: 0%, 0%;
+    background-position: 0% 0%;
     background-size: 5vmin 5vmin;
+    transition: background-position 350ms ease;
+    z-index: 2;
 }
+
