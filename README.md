@@ -1,6 +1,10 @@
 # TwitchHoverCard
 Replication of a hover card effect from twitch
 
+## [Try it out] (https://dew613.github.io/TwitchHoverCard/)
+
+ 
+
 ## My Replica:
 
 ![](https://github.com/Dew613/TwitchHoverCard/blob/main/gifs/my%20replica.gif)
