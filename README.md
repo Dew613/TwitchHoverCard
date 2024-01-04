@@ -1,7 +1,7 @@
 # TwitchHoverCard
 Replication of a hover card effect from twitch
 
-## [Try it out] (https://dew613.github.io/TwitchHoverCard/)
+## [Check it out](https://dew613.github.io/TwitchHoverCard/)
 
  
 
